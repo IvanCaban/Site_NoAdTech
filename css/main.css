@@ -490,6 +490,26 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) and (orientation: landscape) {
+  .b-header__nav {
+    flex-direction: row;
+    width: 100%;
+  }
+  .b-header__nav__list {
+    width: 49%;
+    padding-top: 20px;
+  }
+  .b-header__nav__list > li {
+    width: 100%;
+  }
+  .b-header__nav__list__link {
+    padding: 10px;
+  }
+  .b-header__nav__regist {
+    width: 49%;
+  }
+}
+
 .title-section {
   background: linear-gradient(to right, #5CE098, #196E6E);
 }
@@ -973,7 +993,9 @@ body {
 .statistic-section--wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 0 0;
+  padding: 30px 0 85px 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(185, 203, 209, 0.4);
 }
 
 .statistic-section__send-email {
@@ -994,6 +1016,7 @@ body {
   display: block;
   line-height: 67px;
   margin-bottom: 25px;
+  font-weight: normal;
 }
 
 .statistic-section__send-email__desc {
@@ -1048,4 +1071,275 @@ body {
 
 .statistic-section__send-email__form__send-btn:hover {
   background-color: #55B289;
+}
+
+.statistic-section__trafick {
+  width: 58%;
+  font-family: "Raleway", sans-serif;
+}
+
+.statistic-section__trafick__head {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0 75px;
+}
+
+.statistic-section__trafick__head__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666;
+}
+
+.statistic-section__trafick__head__period {
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 255px;
+  display: flex;
+}
+
+.statistic-section__trafick__head__period__label {
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 40px;
+  width: 33.333%;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.statistic-section__trafick__head__period__radio {
+  display: none;
+}
+
+.statistic-section__trafick__head__period__radio:checked + .statistic-section__trafick__head__period__label {
+  background-color: #E6E6E6;
+}
+
+.statistic-section__trafick__diagram {
+  width: 100%;
+}
+
+.statistic-section__link {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #0071BC;
+  padding-top: 75px;
+}
+
+.statistic-section__link:visited, .statistic-section__link:link, .statistic-section__link:focus {
+  color: #0071BC;
+}
+
+.statistic-section__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .statistic-section--wrapper {
+    padding: 20px 0 45px 0;
+    justify-content: center;
+  }
+  .statistic-section__send-email {
+    width: 70%;
+  }
+  .statistic-section__send-email__title {
+    margin-bottom: 20px;
+  }
+  .statistic-section__send-email__desc {
+    margin-bottom: 25px;
+  }
+  .statistic-section__trafick {
+    width: 100%;
+  }
+  .statistic-section__trafick__head {
+    margin: 45px 0 35px;
+  }
+  .statistic-section__link {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statistic-section__trafick__head {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .statistic-section__trafick__head__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.our-blog-section--wrapper {
+  padding: 70px 0 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+.our-blog-section__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 47px;
+  color: #697075;
+  margin-bottom: 70px;
+}
+
+.our-blog-section__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.our-blog-section__list__li {
+  width: 24%;
+  transition: transform .5s;
+}
+
+.our-blog-section__list__li:hover {
+  transform: scale(1.05);
+}
+
+.our-blog-section__list__li__link {
+  width: 100%;
+}
+
+.our-blog-section__list__li__link__img {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.our-blog-section__list__li__link__data {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #383838;
+}
+
+.our-blog-section__list__li__link__desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: #0071BC;
+}
+
+.our-blog-section__link-to-blog:link, .our-blog-section__link-to-blog:visited, .our-blog-section__link-to-blog:focus {
+  font-size: 16px;
+  line-height: 32px;
+  color: #0071BC;
+  text-align: center;
+  display: block;
+}
+
+.our-blog-section__link-to-blog:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .our-blog-section--wrapper {
+    padding: 35px 0 20px;
+  }
+  .our-blog-section__title {
+    margin-bottom: 35px;
+  }
+  .our-blog-section__list {
+    margin-bottom: 25px;
+  }
+  .our-blog-section__list__li {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+  .our-blog-section__list__li__link__img {
+    margin-bottom: 15px;
+  }
+  .our-blog-section__list__li__link__data {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .our-blog-section__list__li__link__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .our-blog-section__list {
+    margin-bottom: 25px;
+  }
+  .our-blog-section__list__li {
+    width: 100%;
+  }
+}
+
+.b-footer {
+  background-color: #383838;
+  font-family: "Raleway", sans-serif;
+}
+
+.b-footer--wrapper {
+  padding: 55px 5px 30px;
+}
+
+.b-footer__main-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+}
+
+.b-footer__main-list__m-li__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.b-footer__main-list__m-li__d-list__d-li__link:visited, .b-footer__main-list__m-li__d-list__d-li__link:focus, .b-footer__main-list__m-li__d-list__d-li__link:link {
+  font-size: 14px;
+  line-height: 40px;
+  color: #999;
+}
+
+.b-footer__main-list__m-li__d-list__d-li__link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.b-footer__noAdTech-link:visited, .b-footer__noAdTech-link:link, .b-footer__noAdTech-link:active {
+  font-size: 14px;
+  color: rgba(153, 153, 153, 0.4);
+}
+
+.b-footer__noAdTech-link:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.b-footer__noAdTech-link__NoAdTech {
+  margin-right: 35px;
+}
+
+.b-footer--wrapper {
+  padding: 35px 5px 20px;
+}
+
+.b-footer__main-list {
+  margin-bottom: 35px;
+}
+
+.b-footer__main-list__m-li__title {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
